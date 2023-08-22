@@ -49,7 +49,7 @@ def printline():
 
 
 def gen_data():
-    limit = 3000
+    limit = 150000 - 1
     df = pd.read_csv("GPT-wiki-intro.csv")
     df = df.iloc[:limit]
     formatted_data = []
@@ -62,3 +62,4 @@ def gen_data():
 
 data = gen_data()
 dataset = Dataset(data)
+data = Dataset

@@ -124,14 +124,4 @@ model_input = GPT2PPL()
 #print("Model Initialized")
 tokenizer = GPT2TokenizerFast.from_pretrained("gpt2")
 model = MyModelWrapper(model_input,tokenizer)
-#print("Model Wrapper initialized")
-#data = gen_data()
-#print("Dataset initialized")
-#attack = PWWSRen2019.build(model_wrapper)
-#attack_args = AttackArgs(
-#    num_examples=100,
-#    num_successful_examples=2,
-#    log_to_csv="text_attack_results.csv"
-#    )
-#attacker = Attacker(attack, dataset, attack_args)
-#attacker.attack_dataset()
+print("Model Wrapper initialized")
